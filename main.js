@@ -1,0 +1,191 @@
+	var forth=1;
+$('#next1').on('click', function(){
+	$('#first').addClass('hidden');
+	$('#video').removeClass('hidden');
+	$('#np').removeClass('hidden');
+	$('#move_forth').removeClass('hidden');
+	forth=1;
+});
+function move(pos) {
+	var position= pos;
+	if(position==0)
+	{
+		$('#first').removeClass('hidden');
+	$('#video').addClass('hidden');
+	$('#np').addClass('hidden');
+	$('#image1').addClass('hidden');
+	$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').addClass('hidden')
+	}
+	else if(position==1)
+	{
+		$('#first').addClass('hidden');
+	$('#video').removeClass('hidden');
+	$('#image1').addClass('hidden');
+	$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#np').removeClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image8').addClass('hidden');
+	}
+	else if(position==2)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').removeClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	}
+	else if(position==3)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').removeClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	}
+	else if(position==4)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').removeClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	}
+	else if(position==5)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').removeClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image8').addClass('hidden');
+	}
+	else if(position==6)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').removeClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	$('#image8').addClass('hidden');
+	}
+	else if(position==7)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').removeClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	}
+	else if(position==8)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').removeClass('hidden');
+	$('#image8').addClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	}
+	else if(position==9)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#image8').removeClass('hidden');
+	$('#last').addClass('hidden');
+	$('#move_forth').removeClass('hidden')
+	}
+	else if(position==10)
+	{
+		$('#np').removeClass('hidden');
+		$('#video').addClass('hidden');
+		$('#image1').addClass('hidden');
+		$('#image2').addClass('hidden');
+	$('#image3').addClass('hidden');
+	$('#image4').addClass('hidden');
+	$('#image5').addClass('hidden');
+	$('#image6').addClass('hidden');
+	$('#image7').addClass('hidden');
+	$('#image8').addClass('hidden');
+	$('#last').removeClass('hidden');
+	$('#move_forth').addClass('hidden')
+	}
+	// body...
+}
+
+
+$('#move_back').on('click',function(){
+	forth=forth-1;
+	console.log(forth);
+	move(forth);
+});
+$('#move_forth').on('click',function(){
+	forth=forth+1;
+	console.log(forth);
+	move(forth);
+});

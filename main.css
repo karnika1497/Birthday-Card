@@ -1,0 +1,96 @@
+h1{
+			color: snow;
+			font-family: monospace;
+			font-size: 92px;
+			padding: 20px;
+		}
+		.banner{
+			position: relative;
+			top: 50px;
+			text-align: center;
+			background: rgba(0,0,0,0.5);
+			margin: 0;
+			padding: 0;
+		}
+		.next{
+			    
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 55px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 0%;
+    
+    padding: 10px;
+		}
+		body{
+			background:url(wallpaper.jpg);
+			background-size: 260%;
+		}
+		#top{
+			display: inline-flex;
+			width: 50%;
+		}
+		#bottom{
+			display: inline-flex;
+			width: 50%;
+			position: absolute;
+			bottom: 0%;
+			right: 0%;
+		}
+		.hidden{
+			display: none;
+		}
+		#video{
+			    position: relative;
+    margin: 10px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    left: 40px;
+    width: 90%;
+
+		}
+		.pics{
+			    width: 45%;
+    border: 15px solid rgba(0,0,0,0.5);
+    border-radius: 40%;
+    position: absolute;
+    top: 10%;
+    right: 7%;
+		}
+		#np{
+			    
+            font-size: 80px;
+    text-align: center;
+    /*display: inline-block;*/
+    /* background: rgba(0,0,0,0.5); */
+    /* padding: 10px; */
+    width: 100%;
+    position: absolute;
+    /* top: 200px; */
+    top: 75%;
+		}
+		p{
+			    font-size: 55px;
+    position: absolute;
+    top: 37%;
+    padding: 30px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: arial;
+    color: maroon;
+    background: rgba(0,0,0,0.2);
+		}
+		.ls{
+			font-size: 60px;
+    color: crimson;
+    font-weight: bolder;
+    text-align: center;
+		}
+		h2{
+			    font-size: 40px;
+    font-weight: 700;
+    font-family: serif;
+    padding: 30px;
+		}
